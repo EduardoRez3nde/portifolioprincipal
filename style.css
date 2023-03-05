@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+body{
+    background: rgba(0, 9, 15, 0.938) url(imagens/dicas-de-ouro-para-divulgar-seu-trabalho-20220309085235.jpg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    }
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(1, 5, 15, 0.582);
+}
+
+header > h1{
+    text-align: center;
+    color: #01a9ac;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.151);
+}
+
+nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav > li{
+    margin: 10px;
+
+}
+
+nav > li > a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav > li > a:hover{
+    background-color: #01a9ac;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+
+div.background{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(1, 5, 8, 0.849);
+}
+
+/*perfil*/
+
+.container{
+    background-color: rgba(0, 6, 14, 0.74);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 450px;
+
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.151);
+    
+}
+
+.container > .foto{
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 20px;
+
+    border: 7px solid #01a9ac;
+}
+
+div.container > h2, p{
+    padding-top: 10px;
+    text-align: center;
+}
+
+div.redes{
+    margin-top: 10px;
+}
+
+div.redes a > img{
+    width: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    
+    
+}
+
+div.redes a >img:hover{
+    transform: translate(-3px, -3px);
+    transition: transform 0.5s;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+@media screen and (min-width: 768px) {
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header > h1{
+        margin: 20px;
+    }
+
+    nav{
+        align-items: center;
+        margin: 10px;
+    }
+
+    .container{
+        width: 50%;
+    }
+}
+    
+
+    
