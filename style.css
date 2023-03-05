@@ -69,16 +69,15 @@ div.background{
     flex-direction: column;
     align-items: center;
 
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.151);
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    width: 400px;
-    height: 450px;
-
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.151);
     
 }
 
@@ -109,8 +108,8 @@ div.redes a > img{
 
 div.redes a >img:hover{
     transform: translate(-3px, -3px);
-    transition: transform 0.5s;
     border: 1px solid rgb(255, 255, 255);
+    transition: transform 0.5s;
 }
 
 
@@ -130,6 +129,7 @@ div.redes a >img:hover{
 
     .container{
         width: 50%;
+        
     }
 }
     
